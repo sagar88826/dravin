@@ -1,11 +1,13 @@
 
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-   <div>
-    <h1>Hello Website</h1>
-   </div>
+  <>
+  <Navbar/>
+  <div><img src=".\Home.png" width="350" alt="accessibility text"/></div>
+  </>
    
   );
 }
