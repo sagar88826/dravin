@@ -1,15 +1,15 @@
 import React from 'react'
-import logo from './logo.png';
 
+import './Navbar.css'
 function Navbar() {
-  return (
-    <>
-    <div>
-        <img src={logo }alt="not available" />
-        <h1>Dravin</h1>
-     </div>
-    </>
-  )
+    return (
+        <>
+        <div className='nav-main'>
+            <div><img src={process.env.PUBLIC_URL+'/Chat.png'} width="350" alt="accessibility text"/></div>
+           <h1>Dravin</h1>
+        </div>
+        </>
+    )
 }
-
 export default Navbar;
+
