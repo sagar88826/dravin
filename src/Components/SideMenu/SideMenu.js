@@ -22,14 +22,14 @@ export default function SideMenu(props) {
     const [inactive, setinactive] = useState(false)
 
   return (
-    <div className={`side-menu ${inactive ? "inactive" : ""}`}>
+    <div className={`side-menu ${inactive ? "inactive" : "" }"setTop-"${props.mode}`}>
         {/* top Section */}
-        <div className='top-section'>
+        <div className="top-section">
             <div className='logo'>
                 <img src={logo} alt="logo does not load" />
             </div>
             <div onClick={() => setinactive(!inactive)} className='toggle-btn'>
-            {inactive ?  <i class="bi bi-arrow-right-circle-fill"></i> :  <i class="bi bi-arrow-left-circle-fill"></i>}
+            {inactive ?  <i className="bi bi-arrow-right-circle-fill"></i> :  <i className="bi bi-arrow-left-circle-fill"></i>}
             </div>
         </div>
         {/* Divider  */}
