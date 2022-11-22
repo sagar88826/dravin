@@ -1,13 +1,18 @@
 import React from 'react'
 
 import './Navbar.css'
-function Navbar() {
+function Navbar({toggleButton,theme}) {
+
     return (
         <>
-        <div className='nav-main'>
-            <div><img src={process.env.PUBLIC_URL+'/Chat.png'} width="350" alt="accessibility text"/></div>
-           <h1>Dravin</h1>
-        </div>
+            <div className={`nav-main set-${theme}`}>
+                <h1 className={`nav-heading ${theme}`}>Dravin</h1>
+                <div className="toggle-mode" onClick={toggleButton} theme={theme} >
+            {    theme ==='light' ?  <i className="bi bi-moon-fill"></i> :  <i className="bi bi-sun-fill "></i>}
+                </div>
+                
+                
+            </div>
         </>
     )
 }
