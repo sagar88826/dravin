@@ -1,6 +1,8 @@
 .nav-main{
     height: 65px;
     text-align: center;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+   
 }
 .nav-main.set-dark{
     background-color: #171717;
