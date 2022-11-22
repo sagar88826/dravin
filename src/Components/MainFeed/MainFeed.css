@@ -1,0 +1,29 @@
+.tile-container{
+    margin:1rem 0 0 5rem;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+}
+.tile-1{
+    width: 70%;
+    border-right: 0px solid gray;
+}
+.tile-2{
+    width: 30%;
+    display: fixed; 
+    
+    
+}
+.box{
+    margin: 5% 15%;
+    padding: 150px 50px;
+    background-color:#fff;
+    box-shadow: 0 0 1rem rgba(0,0,0, 0.3);
+    border-radius: 8px;
+}
+.tile-2 .box{
+    
+    padding: 5rem 2rem 4rem 4rem;
+    margin: 2.5rem 3rem 0 0;
+
+}
