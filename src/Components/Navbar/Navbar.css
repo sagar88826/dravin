@@ -3,21 +3,31 @@
     text-align: center;
 }
 .nav-main.set-dark{
-    background-color: rgb(49, 40, 40);
+    background-color: #171717;
+    transition: all 0.2s linear;
 }
 .nav-main.set-light{
     background-color: #E6E6FA;
+    transition: all 0.2s linear;
 }
 .nav-main .nav-heading{ 
     display: inline-block;
     font-size: 40px;
     transform: translateY(7px);
 }
+.nav-main .nav-heading.dark {
+   color: #E6E6FA  
+}
 .nav-main .toggle-mode{
     display: inline-block;
     position: absolute;
     right: 2%;
-    /* background-color: red; */
-    font-size: 20px;
     margin-top:20px;
+}
+.nav-main .toggle-mode .bi.bi-sun-fill{
+    color:white;
+    transition: all 0.2s linear;
+}.nav-main .toggle-mode .bi.bi-sun-fill{
+    color:mediumslateblue;
+    transition: all 0.2s linear;
 }

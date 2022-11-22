@@ -1,29 +1,22 @@
-
 import './App.css';
 import Navbar from './Components/Navbar/Navbar.js';
 import SideMenu from './Components/SideMenu/SideMenu.js';
-import { useState } from 'react';
+import { useDarkMode} from './Components/Navbar/useDarkMode'
 
 function App() {
-  const [mode, setMode] = useState('light')
-    const changeMode =()=>{
-        if(mode==="light")
-        {
-            setMode('dark')
-        }
-        else{
-            setMode('light')
-        }
-    }
+
+  const [theme, toggleButton] = useDarkMode();
+  if(theme==='dark'){
+    document.body.style.backgroundColor='#28282B';
+   }else{
+    document.body.style.backgroundColor='#FAF9F6';
+   }
+  
   return (
-
   <>
-  <SideMenu/>
-  <Navbar changeMode={changeMode} mode={mode}/>
-  
-  
+  <SideMenu theme={theme}/>
+  <Navbar toggleButton={toggleButton} theme={theme} />
   </>
-
   );
 }
 
