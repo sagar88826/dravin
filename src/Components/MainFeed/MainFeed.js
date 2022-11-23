@@ -18,10 +18,11 @@ function MainFeed() {
                     <div className="box">inside the tiles</div>
                 </div>
                 <div className="tile-2">
+                   <div className="tile-2-child">
                     <div className="box"></div>
                     <div className="box"></div>
                     <div className="box"></div>
-                    <div className="box"></div>
+                   </div>
                 </div>
             </div>
 
