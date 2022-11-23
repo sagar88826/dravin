@@ -20,8 +20,9 @@
 }
 .mainUB .UB .userImg img{
     height: 30px;
+    position: relative;
     border-radius: 50%;
-    margin:1rem;
+    margin: 1.2rem 1rem 0 1rem;
 }
 
 .mainUB .post-area{
