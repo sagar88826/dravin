@@ -6,6 +6,7 @@
     box-sizing: border-box;
     transition: width 0.2s ease;
     box-shadow: 0 3.9rem 1rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 .side-menu.setTop-light{
     background-color: #E6E6FA;
@@ -38,7 +39,8 @@
    font-size: 25px;
    top: 50%; 
    transform: translateY(-50%);
-   right: 0;  
+   right: 0; 
+   z-index: 2; 
 }
 .side-menu .top-section .toggle-btn.dark{
     color: white;
