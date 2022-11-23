@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar/Navbar.js';
 import SideMenu from './Components/SideMenu/SideMenu.js';
 import { useDarkMode} from './Components/Navbar/useDarkMode'
 import MainFeed from './Components/MainFeed/MainFeed';
-
+import UploadBar from './Components/UserUpload/UploadBar';
 function App() {
 
   const [theme, toggleButton] = useDarkMode();
@@ -17,6 +17,7 @@ function App() {
   <>
   <SideMenu theme={theme}/>
   <Navbar className='side-bar' toggleButton={toggleButton} theme={theme} />
+  <UploadBar/>
   <MainFeed/>
   </>
   );

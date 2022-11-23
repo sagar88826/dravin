@@ -19,9 +19,9 @@ function MainFeed() {
                 </div>
                 <div className="tile-2">
                    <div className="tile-2-child">
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
+                   <div className="side-box"></div>
+                   <div className="side-box"></div>
+                   <div className="side-box"></div>
                    </div>
                 </div>
             </div>

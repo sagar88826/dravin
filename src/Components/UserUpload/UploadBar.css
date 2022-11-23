@@ -1,0 +1,53 @@
+.mainUB{
+
+    height: 5rem;
+    border: 1px solid #EEEEEE;
+    margin-top: 1rem;
+    margin-left: 12.8rem;
+    margin-right: 30rem;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 5px #d3d3d3;
+    background-color: #ffffff33;
+}
+.mainUB .UB{
+   
+}
+.mainUB .UB .userImg img{
+    height: 30px;
+    border-radius: 50%;
+    margin:1rem;
+}
+
+.mainUB .post-area{
+    width: 100%;
+}
+#text-input{
+    margin: 1.4rem 0;
+    width: 70%;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    text-indent: 10px;
+    background-color: #ffffff00;
+    border-bottom: 1px solid #EEEEEE;
+}
+.mainUB .post-area i{
+    margin:0 1.5rem;
+    font-size: 1.2rem;
+    transform: translateY(3px);
+    display: inline-block;
+}
+#post-button{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 16px;
+}

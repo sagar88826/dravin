@@ -22,9 +22,10 @@
 }
 .nav-main .toggle-mode{
     display: inline-block;
-    position: absolute;
+    position: fixed;
     right: 2%;
     margin-top:20px;
+    z-index: 2;
 }
 .nav-main .toggle-mode .bi.bi-sun-fill{
     color:white;
