@@ -1,11 +1,13 @@
 import React from 'react'
 import './MainFeed.css'
+import UploadBar from '../UserUpload/UploadBar'
 
 function MainFeed() {
     return (
         <>
             <div className="tile-container">
                 <div className='tile-1'>
+                    <UploadBar></UploadBar>
                     <div className="box">inside the tiles</div>
                     <div className="box">inside the tiles</div>
                     <div className="box">inside the tiles</div>

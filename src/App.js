@@ -17,7 +17,7 @@ function App() {
   <>
   <SideMenu theme={theme}/>
   <Navbar className='side-bar' toggleButton={toggleButton} theme={theme} />
-  <UploadBar/>
+  {/* <UploadBar/> */}
   <MainFeed/>
   </>
   );

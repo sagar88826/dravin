@@ -1,18 +1,19 @@
 .mainUB{
 
     height: 5rem;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
     margin-top: 1rem;
-    margin-left: 12.8rem;
-    margin-right: 30rem;
-    display: flex;
+    /* margin-left:0; */
+   margin: 5% 15%;
+   width: 70%;
+    display: relative;
     flex-direction: row;
     position: sticky;
     top: 10px;
     z-index: 1;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    box-shadow: 1px 1px 5px #d3d3d3;
+    box-shadow: 1px 1px 2px #d3d3d3;
     background-color: #ffffff33;
 }
 .mainUB .UB{
