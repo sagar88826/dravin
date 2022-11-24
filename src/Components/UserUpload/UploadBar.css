@@ -1,11 +1,9 @@
-.mainUB{
+.mainUB {
 
     height: 5rem;
-    /* border: 1px solid #EEEEEE; */
     margin-top: 1rem;
-    /* margin-left:0; */
-   margin: 5% 15%;
-   width: 70%;
+    margin: 5% 15%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     position: sticky;
@@ -15,38 +13,73 @@
     backdrop-filter: blur(10px);
     box-shadow: 1px 1px 2px #d3d3d3;
     background-color: #ffffff33;
-}
-.mainUB .UB{
-   
-}
-.mainUB .UB .userImg img{
-    height: 30px;
-    position: relative;
-    border-radius: 50%;
-    margin: 1.2rem 1rem 0 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+
 }
 
-.mainUB .post-area{
+.mainUB .UB .userImg {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.mainUB .UB .userImg img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+
+
+input[type="text"] {
+    box-sizing: border-box;
+    background: transparent;
+    letter-spacing: 1px;
+    justify-content: flex-start;
+}
+
+:focus {
+    outline: none;
+}
+
+.col-3 {
+    float: left;
+    position: relative;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.effect-1 {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect-1~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: purple;
+    transition: 0.4s;
+}
+
+.effect-1:focus~.focus-border {
     width: 100%;
+    transition: 0.4s;
 }
-#text-input{
-    margin: 1.4rem 0;
-    width: 70%;
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    padding: 5px;
-    text-indent: 10px;
-    background-color: #ffffff00;
-    border-bottom: 1px solid #EEEEEE;
-}
-.mainUB .post-area i{
-    margin:0 1.5rem;
+
+.mainUB .post-area i {
     font-size: 1.2rem;
     transform: translateY(3px);
     display: inline-block;
 }
-#post-button{
+
+#post-button {
     display: inline-block;
     text-decoration: none;
     border: none;

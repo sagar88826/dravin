@@ -8,12 +8,15 @@ export default function UploadBar() {
         <div className="UB">
             <figure className='userImg'><img src={img} alt="avatar" /></figure>
         </div>
-        <div className='post-area'>
-            <form action="#">
-                <input id='text-input' type="text" placeholder='Type here something...'/>
-                <i class="bi bi-image"></i>
-                <button id='post-button'>Post</button>                   
-            </form>
+        <div class="col-3">
+            <input class="effect-1" type="text" placeholder='what&#39;s happening?' size={50}/>
+              <span class="focus-border"></span>
+          </div>
+        <div className="post-area">
+        <i class="bi bi-image"></i>
+        </div>
+        <div className="post-area">
+        <button id='post-button'>Post</button>
         </div>
     </div>
     </>

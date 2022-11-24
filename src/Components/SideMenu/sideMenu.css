@@ -1,15 +1,15 @@
 .side-menu{
     position: fixed;
-    width: 150px;
+    width: 12rem;
     height: 100%;
     padding:1% 1%;
     box-sizing: border-box;
     transition: width 0.2s ease;
-    box-shadow: 0 3.9rem 1rem rgba(0, 0, 0, 0.3);
+   
     z-index: 1;
 }
 .side-menu.setTop-light{
-    background-color: #E6E6FA;
+    background-color: #ffffff;
     transition: all 0.2s linear;
 }
 .side-menu.setTop-dark{
@@ -18,10 +18,12 @@
 }
 
 .side-menu.inactive{
-    width: 50px;
+    width: 4rem;
 }
 .side-menu .top-section{
     position: relative;
+    margin-top: 13px;
+   
 }
 
 .side-menu .top-section .logo{
@@ -101,15 +103,15 @@
    left: 0;
 }
 .sidebar-footer.light{
-    background-color: #d3d3f8;
+    background-color: #e7e7e7;
     transition: all 0.2s linear;
 }
 .sidebar-footer.dark{
-    background-color: #333333
+    background-color: #515151
 }
 .sidebar-footer .avatar{
 
-   margin: 10px 15px;
+   margin: 10px 10px;
    display: inline-block;
 
 }
