@@ -1,5 +1,5 @@
 .nav-main{
-    height: 65px;
+    height: 40px;
     text-align: center;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
    
@@ -10,6 +10,7 @@
 }
 .nav-main.set-light{
     background-color: #E6E6FA;
+    /* background: linear-gradient(to bottom right , red ,blue ); */
     transition: all 0.2s linear;
 }
 .nav-main .nav-heading{ 
