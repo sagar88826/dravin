@@ -82,6 +82,24 @@ export default function SideMenu(props) {
         <div className="avatar">
            <img src={avatar} alt="" />
         </div>
+        <div className="avatar">
+           <img src={avatar} alt="" />
+        </div>
+        <div className="avatar">
+           <img src={avatar} alt="" />
+        </div>
+        <div className="avatar">
+           <img src={avatar} alt="" />
+        </div>
+        <div className="avatar">
+           <img src={avatar} alt="" />
+        </div>
+        <div className="avatar">
+           <img src={avatar} alt="" />
+        </div>
+        <div className="avatar">
+           <img src={avatar} alt="" />
+        </div>
         <div className={`user-info ${props.theme}`}>
            <h5>Dillin Nair</h5>
            <p>Dillinnair@gmail.com</p>
