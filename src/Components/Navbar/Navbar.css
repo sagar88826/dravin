@@ -18,17 +18,17 @@
     font-size: 2rem;
 }
 .nav-main .nav-heading.dark {
-   color: #E6E6FA  
+   color: #ffffff  
 }
-.nav-main .toggle-mode{
+ .toggle-mode{
     display: inline-block;
     position: fixed;
     right: 2%;
     margin-top:20px;
     z-index: 2;
 }
-.nav-main .toggle-mode .bi.bi-sun-fill{
-    color:white;
+.toggle-mode .bi.bi-sun-fill{
+    color:rgb(255, 255, 255);
     transition: all 0.2s linear;
 }.nav-main .toggle-mode .bi.bi-sun-fill{
     color:mediumslateblue;
