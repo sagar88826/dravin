@@ -16,7 +16,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -28,7 +28,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -39,7 +39,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -50,7 +50,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -61,7 +61,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -72,7 +72,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -83,7 +83,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -94,7 +94,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -105,7 +105,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -116,7 +116,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>
@@ -127,7 +127,7 @@ function MainFeed() {
                             <i class="bi bi-three-dots"></i>
                         </div>
                         <div className="box-content">
-                                <img src={avatar} alt="avatar" />
+                            <img src={avatar} alt="avatar" />
                         </div>
                         <div className="box-footer"></div>
                     </div>

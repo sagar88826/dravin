@@ -57,7 +57,7 @@ input[type="text"] {
     border: 0;
     padding: 7px 0;
     border-bottom: 1px solid #ccc;
-   width: 90%;
+    width: 90%;
 }
 
 .effect-1~.focus-border {
