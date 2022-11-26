@@ -20,6 +20,118 @@ function MainFeed() {
                         </div>
                         <div className="box-footer"></div>
                     </div>
+                    {/* creating more posts */}
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    <div className="box">
+                        <div className="box-header">
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className="box-content">
+                                <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className="box-footer"></div>
+                    </div>
+                    {/* posts end here */}
                 </div>
                 <div className="tile-2">
                     <div className="tile-2-child">
