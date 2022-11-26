@@ -26,6 +26,9 @@ function MainFeed() {
                         <div className="side-box"></div>
                         <div className="side-box"></div>
                         <div className="side-box"></div>
+                        <div className="side-box"></div>
+                        <div className="side-box"></div>
+                        <div className="side-box"></div>
                     </div>
                 </div>
             </div>
