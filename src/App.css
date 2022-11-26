@@ -1,16 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
 }
-li{
+
+li {
     list-style: none;
 }
-body{
+
+body {
     background-color: #eee;
     font-family: 'Open Sans', sans-serif;
 }
