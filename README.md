@@ -18,8 +18,7 @@
    <img src=".\src\Components\Img\ReadmeImg\Chat.png" width="350" alt="accessibility text">
    <br><h3>Video Callingg</h3>
     <br>
-   <br>
-   <h3>Video Calling</h3>
+  
    <br>
     <img src=".\src\Components\Img\ReadmeImg\Home.png" width="350" alt="accessibility text">
 </p>
