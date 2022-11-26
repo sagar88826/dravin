@@ -1,7 +1,7 @@
 .nav-main{
-    height: 65px;
+    height: 3rem;
     text-align: center;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+   
    
 }
 .nav-main.set-dark{
@@ -9,22 +9,23 @@
     transition: all 0.2s linear;
 }
 .nav-main.set-light{
-    background-color: #E6E6FA;
+    background-color: #ffffff;
+    /* background: linear-gradient(to bottom right , red ,blue ); */
     transition: all 0.2s linear;
 }
 .nav-main .nav-heading{ 
     display: inline-block;
-    font-size: 40px;
-    transform: translateY(7px);
+    font-size: 2rem;
 }
 .nav-main .nav-heading.dark {
    color: #E6E6FA  
 }
 .nav-main .toggle-mode{
     display: inline-block;
-    position: absolute;
+    position: fixed;
     right: 2%;
     margin-top:20px;
+    z-index: 2;
 }
 .nav-main .toggle-mode .bi.bi-sun-fill{
     color:white;
