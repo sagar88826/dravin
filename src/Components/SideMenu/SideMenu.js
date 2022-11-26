@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 // eslint-disable-next-line
 import sideMenu from './sideMenu.css'
 import logo from '../Img/logo.gif'
@@ -21,61 +21,50 @@ export default function SideMenu(props) {
 
 
 
-    const [inactive, setinactive] = useState(false)
+
 
     return (
 
-        <div className={`side-menu setTop-${props.theme} ${!inactive ? "inactive" : ""}`}>
+        <div className={`side-menu }`}>
             {/* top Section */}
             <div className="top-section">
                 <div className='logo'>
                     <img src={logo} alt="logo does not load" />
                 </div>
-                <div onClick={() => setinactive(!inactive)} className={`toggle-btn ${props.theme}`}>
-                    {!inactive ? <i className="bi bi-arrow-right-circle-fill"></i> : <i className="bi bi-arrow-left-circle-fill"></i>}
+                <div className="l-name">
+                    <p>dravin</p>
                 </div>
             </div>
             {/* Divider  */}
             <div className="Divider"></div>
             {/* Menu Bar  */}
+
             <div className="main-menu">
-                <ul>
-                    <li>
-                        <div className="home-icon">
 
-                            <img src={home} alt="img" />
+                <div className="home-icon">
 
-                        </div>
-                        <h4 className={`menu-name ${props.theme}`}>Home</h4>
+                    <i class="bi bi-house"></i>
+                    <h4 className={`menu-name ${props.theme}`}>Home</h4>
+                </div>
 
-                    </li>
-                </ul>
             </div>
             <div className="main-menu">
-                <ul>
-                    <li>
-                        <div className="home-icon">
 
-                            <img src={video} alt="img" />
+                <div className="home-icon">
 
-                        </div>
-                        <h4 className={`menu-name ${props.theme}`}>Video Call</h4>
+                    <i class="bi bi-camera-video"></i>
+                    <h4 className={`menu-name ${props.theme}`}>Video Call</h4>
+                </div>
 
-                    </li>
-                </ul>
             </div>
             <div className="main-menu">
-                <ul>
-                    <li>
-                        <div className="home-icon">
 
-                            <img src={chat} alt="img" />
+                <div className="home-icon">
 
-                        </div>
-                        <h4 className={`menu-name ${props.theme}`}>Chat</h4>
+                    <i class="bi bi-chat-left"></i>
+                    <h4 className={`menu-name ${props.theme}`}>Chat</h4>
+                </div>
 
-                    </li>
-                </ul>
             </div>
             {/* Footer For Login Icon */}
             <div className={`sidebar-footer ${props.theme}`}>
