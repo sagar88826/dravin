@@ -1,31 +1,14 @@
 import React from 'react'
-// eslint-disable-next-line
-import sideMenu from './sideMenu.css'
+import './sideMenu.css'
 import logo from '../Img/logo.gif'
-import home from '../Img/sideBar/home.png'
-import video from '../Img/sideBar/video.png'
-import chat from '../Img/sideBar/chat.png'
 import avatar from '../Img/sideBar/avatar.jpg'
 
 
-
-
-
-/** 
- * 
- * @author: vishal
- * @feature: Adds Side Menu
- */
-
 export default function SideMenu(props) {
-
-
-
-
 
     return (
 
-        <div className={`side-menu }`}>
+        <div className={`side-menu setTop-${props.theme} }`}>
             {/* top Section */}
             <div className="top-section">
                 <div className='logo'>

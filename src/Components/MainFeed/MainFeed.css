@@ -19,7 +19,11 @@
     background-color: #e1e1e1;
     border-radius: 3px;
     max-height: 40rem;
+   
 
+}
+.tile-container .tile-1 .box.dark{
+    background-color: #333d47 ;
 }
 
 .tile-container .tile-1 .box:hover {
@@ -36,6 +40,11 @@
     background-color: #e1e1e1;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    gap: 10px;
+}
+
+.tile-container .tile-1 .box .box-header.dark{
+    background-color: #333d47;
 }
 
 .tile-container .tile-1 .box .box-header figure {
@@ -56,8 +65,15 @@
     margin-left: 3px;
 }
 
+.tile-container .tile-1 .box .box-header.dark p {
+color: #e1e1e1;
+}
+
 .tile-container .tile-1 .box .box-header i {
     margin-right: 0.5rem;
+}
+.tile-container .tile-1 .box .box-header i{
+    color: #e1e1e1;
 }
 
 .tile-container .tile-1 .box .box-content img {
@@ -68,7 +84,7 @@
 }
 
 .tile-container .tile-1 .box .box-footer{
-  height: 2rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,9 +93,18 @@
   background-color: #e1e1e1;
 }
 
+.tile-container .tile-1 .box .box-footer{
+    color: #e1e1e1;
+}
+
+.tile-container .tile-1 .box .box-footer.dark{
+    background-color: #333d47;
+}
+
 
 .tile-container .tile-2 {
     width: 25rem;
+   
 }
 
 .tile-container .tile-2 .tile-2-child {
@@ -90,9 +115,12 @@
 .tile-2 .side-box {
     /* padding: 5rem 2rem 4rem 4rem; */
     height: 17rem;
+   
 }
+
 .tile-container .tile-2 .tile-2-child{
     margin-top: 4.5rem;
+    
 }
 
 .tile-container .tile-2 .tile-2-child .side-box {
@@ -103,6 +131,11 @@
     border: 1px solid #ebebebfb;
     border-radius: 1rem;
 }
+
+.tile-container .tile-2 .tile-2-child .side-box.dark {
+background-color: #313b44;
+border: 1px solid #424141fb
+}
 .tile-container .tile-2 .tile-2-child .side-box .sb-header{
     background-color: #e1e1e1;
     height: 2.5rem;
@@ -110,8 +143,16 @@
     border-top-right-radius: 1rem;
     border-bottom: 1px solid rgb(192, 191, 191);
 }
+
+.tile-container .tile-2 .tile-2-child .side-box .sb-header.dark{
+    background-color: #222a33;
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
 .tile-container .tile-2 .tile-2-child .side-box .sb-header p{
     position: relative;
     top: 10px;
     left: 18px;
+}
+.tile-container .tile-2 .tile-2-child .side-box .sb-header .sb-head.dark{
+    color: #e1e1e1;
 }

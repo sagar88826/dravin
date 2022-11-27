@@ -3,22 +3,37 @@ import './MainFeed.css'
 import UploadBar from '../UserUpload/UploadBar'
 import avatar from '../Img/sideBar/avatar.jpg'
 
-function MainFeed() {
+function MainFeed(props) {
     return (
         <>
             <div className="tile-container">
                 <div className='tile-1'>
-                    <UploadBar></UploadBar>
-                    <div className="box">
-                        <div className="box-header">
+                    <UploadBar theme={props.theme}/>
+                    <div className={`box ${props.theme}`}>
+                        <div className={`box-header ${props.theme}`}>
                             <figure><img src={avatar} alt="avatar" /></figure>
                             <p>Dillon Nair</p>
                             <i class="bi bi-three-dots"></i>
                         </div>
-                        <div className="box-content">
+                        <div className={`box-content ${props.theme}`}>
                             <img src={avatar} alt="avatar" />
                         </div>
-                        <div className="box-footer">
+                        <div className={`box-footer ${props.theme}`}>
+                            <i class="bi bi-chat-right"></i>
+                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-send"></i>
+                        </div>
+                    </div>
+                    <div className={`box ${props.theme}`}>
+                        <div className={`box-header ${props.theme}`}>
+                            <figure><img src={avatar} alt="avatar" /></figure>
+                            <p>Dillon Nair</p>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div className={`box-content ${props.theme}`}>
+                            <img src={avatar} alt="avatar" />
+                        </div>
+                        <div className={`box-footer ${props.theme}`}>
                             <i class="bi bi-chat-right"></i>
                             <i class="bi bi-heart"></i>
                             <i class="bi bi-send"></i>
@@ -27,18 +42,19 @@ function MainFeed() {
                 </div>
                 <div className="tile-2">
                     <div className="tile-2-child">
-                        <div className="side-box">
-                            <div className="sb-header">
-                                <p>What's happening?</p>
+                        <div className={`side-box ${props.theme}`}>
+                            <div className={`sb-header ${props.theme}`}>
+                                <p className={`sb-head ${props.theme}`}>What's happening?</p>
                             </div>
                             <div className="sb-content"></div>
                         </div>
-                        <div className="side-box">
-                            <div className="sb-header">
-                                <p>News Feed</p>
+                        <div className={`side-box ${props.theme}`}>
+                            <div className={`sb-header ${props.theme}`}>
+                                <p className={`sb-head ${props.theme}`}>News Headlines</p>
                             </div>
                             <div className="sb-content"></div>
                         </div>
+                       
 
                     </div>
                 </div>
