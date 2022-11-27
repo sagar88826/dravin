@@ -1,10 +1,10 @@
 import React from 'react'
 import './UploadBar.css'
 import img from '../Img/sideBar/avatar.jpg'
-export default function UploadBar() {
+export default function UploadBar(props) {
   return (
     <>
-      <div className="mainUB">
+      <div className={`mainUB ${props.theme}`}>
         <div className="UB">
           <figure className='userImg'><img src={img} alt="avatar" /></figure>
         </div>
