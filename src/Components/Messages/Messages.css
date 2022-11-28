@@ -74,7 +74,7 @@ transition: all  2s ease;
 
 
 .container-msg .user-tab .user-name .dp{
-    background-color: red;
+   
     width: 40px;
     height: 40px;
     margin: 0 10px;
@@ -101,20 +101,80 @@ flex: 2;
 
 }
 .container-msg .chat-tab .friend-header{
-    height: 10%;
-    background-color: red;
+    height: 15%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    flex-direction: column;
 }
-.container-msg .chat-tab .friend-header-img{
-    background-color: yellow;
-    width: 40px;
-    height: 40px;
+.container-msg .chat-tab .friend-header .friend-header-img{
+  
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    overflow: hidden;
+    flex-direction: column;
    
 }
+.container-msg .chat-tab .friend-header .friend-header-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
 .container-msg .chat-tab .friend-header-name{
+    font-size: 0.8rem;
+font-weight: 600;
 
+}
+.container-msg .chat-tab .chat-window{
+  
+    height: 24rem;
+}.container-msg .chat-tab .chat-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+    height: 3rem;
+}
+.container-msg .chat-tab .chat-footer .msg-box{
+    width: 80%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid grey;
+}
+.container-msg .chat-tab .chat-footer .msg-box input{
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 5px;
+    height: 30px;
+    border: none;
+   
+}
+.container-msg .chat-tab .chat-footer .upload-img {
+    width: 40px; 
+    height: 40px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-msg .chat-tab .chat-footer .upload-img i{
+   font-size: 1.5rem;
+  
+}
+.container-msg .chat-tab .chat-footer .send-msg{
+    width: 40px; 
+    height: 40px;
+   
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-msg .chat-tab .chat-footer .send-msg i{
+    font-size: 1.5rem;
 }
