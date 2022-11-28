@@ -15,6 +15,7 @@
     background-image: linear-gradient(#fff, #ffffff33);
     justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
 
 
 }

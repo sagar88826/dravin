@@ -50,7 +50,7 @@ function MainFeed(props) {
                         </div>
                         <div className={`side-box ${props.theme}`}>
                             <div className={`sb-header ${props.theme}`}>
-                                <p className={`sb-head ${props.theme}`}>News Headlines</p>
+                                <p className={`sb-head ${props.theme}`}># News Headlines</p>
                             </div>
                             <div className="sb-content"></div>
                         </div>
