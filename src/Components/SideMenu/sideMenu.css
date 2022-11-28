@@ -76,10 +76,29 @@
 .side-menu .main-menu .home-icon {
     display: flex;
     gap: 1rem;
+
+}
+
+.side-menu .main-menu .home-icon:hover {
+    background-color: #e6e6e6;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+.side-menu.setTop-dark .main-menu .home-icon:hover {
+    background-color: #363f48;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
 }
 
 .side-menu .main-menu .home-icon i {
     font-size: 1.5rem;
+    margin: 2px 0;
+    margin-left: 20px;
+
 }
 
 .side-menu.setTop-dark .main-menu .home-icon i {
@@ -149,4 +168,38 @@
 .sidebar-footer .user-info p {
     font-size: 70%;
     color: grey;
+}
+
+
+
+/* Style For Toggle Menu - Dark Menu  */
+.toggle-mode {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 2%;
+    margin-top: 20px;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.toggle-mode.light:hover {
+    background-color: rgb(189, 189, 189);
+    transition: all 0.5s ease;
+
+}
+
+.toggle-mode.dark:hover {
+    background-color: rgb(76, 55, 195);
+    transition: all 0.5s ease;
+
+}
+
+.toggle-mode .bi.bi-sun-fill {
+    color: rgb(255, 255, 255);
+    transition: all 0.2s linear;
 }
