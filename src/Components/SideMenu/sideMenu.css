@@ -1,4 +1,13 @@
+.my-link {
+    color: inherit;
+}
+
+
+
 .side-menu {
+
+
+
     position: fixed;
     width: 12rem;
     height: 100%;
@@ -85,7 +94,9 @@
     cursor: pointer;
     transition: all 0.2s ease;
 
+
 }
+
 .side-menu.setTop-dark .main-menu .home-icon:hover {
     background-color: #363f48;
     border-radius: 18px;
@@ -98,6 +109,7 @@
     font-size: 1.5rem;
     margin: 2px 0;
     margin-left: 20px;
+    color: black;
 
 }
 
@@ -110,6 +122,10 @@
     font-weight: 500;
     font-size: 1rem;
     align-self: center;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+
 }
 
 .side-menu .main-menu .menu-name.dark {
@@ -202,4 +218,8 @@
 .toggle-mode .bi.bi-sun-fill {
     color: rgb(255, 255, 255);
     transition: all 0.2s linear;
+}
+
+a {
+    text-decoration: none;
 }

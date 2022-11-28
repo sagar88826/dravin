@@ -86,8 +86,9 @@ input[type="text"] {
     transform: translateY(3px);
     display: inline-block;
 }
+
 .mainUB.dark .post-area i {
-color: white;
+    color: white;
 }
 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './sideMenu.css'
 import logo from '../Img/logo.gif'
 import avatar from '../Img/sideBar/avatar.jpg'
+import { Link } from 'react-router-dom'
 
 
 function SideMenu(props) {
@@ -41,31 +42,39 @@ function SideMenu(props) {
                 {/* Menu Bar  */}
 
                 <div className="main-menu">
+                    <Link to="/" ><li>
+                        <div className="home-icon">
 
-                    <div className="home-icon">
-
-                        <i class="bi bi-house"></i>
-                        <h4 className={`menu-name ${props.theme}`}>Home</h4>
-                    </div>
-
-                </div>
-                <div className="main-menu">
-
-                    <div className="home-icon">
-
-                        <i class="bi bi-camera-video"></i>
-
-                        <h4 className={`menu-name ${props.theme}`}>Video Call</h4>
-                    </div>
+                            <i class="bi bi-house"></i>
+                            <h4 className={`menu-name ${props.theme}`}>
+                                Home
+                            </h4>
+                        </div>
+                    </li></Link>
 
                 </div>
                 <div className="main-menu">
 
-                    <div className="home-icon">
+                    <Link to="/VideoCall" >
 
-                        <i class="bi bi-chat-left"></i>
-                        <h4 className={`menu-name ${props.theme}`}>Chat</h4>
-                    </div>
+                        <div className="home-icon">
+
+                            <i class="bi bi-camera-video"></i>
+
+                            <h4 className={`menu-name ${props.theme}`}>Video Call</h4>
+                        </div>
+                    </Link>
+
+                </div>
+                <div className="main-menu">
+
+                    <Link to="/Message" >
+                        <div className="home-icon" >
+
+                            <i class="bi bi-chat-left"></i>
+                            <h4 className={`menu-name ${props.theme}`}>Message</h4>
+                        </div>
+                    </Link>
 
                 </div>
 
