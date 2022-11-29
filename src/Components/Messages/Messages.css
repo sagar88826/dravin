@@ -128,7 +128,11 @@
     border-radius: 50%;
     overflow: hidden;
     flex-direction: column;
-
+}
+.container-msg .chat-tab .type-section{
+    position: relative;
+    bottom: 20px;
+    border: 1px solid;
 }
 
 .container-msg .chat-tab .friend-header .friend-header-img img {

@@ -1,13 +1,17 @@
 .video-section {
     height: 35rem;
-    width: 70rem;
+    width: 65rem;
     margin-left: 15rem;
     position: relative;
     top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
 }
 
 .video-header {
     height: 85%;
+    width: 45rem;
     margin: 5px;
     box-shadow: 0 0 10px grey;
     background-color: rgb(211, 211, 211);
@@ -21,17 +25,20 @@
     height: 12%;
     margin: 5px;
     position: relative;
-    top: 1rem;
+    top: 15rem;
+    left: 2rem;
     /* border: 1px solid red; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20rem;
+    gap: rem;
     justify-content: space-around;
 }
 
 .video-footer .button-section {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
     position: relative;
     right: 3.5rem;
 }
@@ -50,13 +57,16 @@
 }
 
 .video-footer .button-section button:hover {
-    background-color: rgba(157, 63, 245, 0.733);
+    background-color: rgb(200, 140, 255);
     box-shadow: 0 0 3px black;
 }
 
 .video-footer .com-section {
     font-size: 2rem;
-    width: 12rem;
+    position: relative;
+    right: 3.5rem;
+    top: 2rem;
+    width: 10rem;
     display: flex;
     justify-content: space-evenly;
 }
