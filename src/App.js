@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={[<SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>,<MainFeed></MainFeed>]}/>
-        <Route path='/VideoCall' element={[<SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>,<VideoMeet></VideoMeet>]}/> 
-        <Route path='/Message' element={[<SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>,<Messages></Messages>]}/>
+        <Route path='/' element={[<SideMenu toggleButton={toggleButton} theme={theme}/>,<MainFeed theme={theme}/>]}/>
+        <Route path='/VideoCall' element={[<SideMenu toggleButton={toggleButton} theme={theme}/>,<VideoMeet/>]}/> 
+        <Route path='/Message' element={[<SideMenu toggleButton={toggleButton} theme={theme}/>,<Messages/>]}/>
         <Route path='*' element={<Error404></Error404>}/>
 
       </Routes>
