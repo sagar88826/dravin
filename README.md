@@ -20,5 +20,5 @@
     <br>
   
    <br>
-    <img src=".\src\Components\Img\ReadmeImg\Home.png" width="350" alt="accessibility text">
+    <img src=".\src\Components\Img\ReadmeImg\VC.png" width="350" alt="accessibility text">
 </p>
