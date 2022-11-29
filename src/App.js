@@ -5,6 +5,7 @@ import MainFeed from './Components/MainFeed/MainFeed';
 import VideoMeet from './Components/VideoMeeting/VideoMeet'
 import Messages from './Components/Messages/Messages'
 import { Routes, Route } from 'react-router-dom';
+import Error404 from './Components/Error/Error404';
 
 function App() {
 
@@ -12,30 +13,14 @@ function App() {
 
   return (
     <>
-
-      <SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>
-
       <Routes>
-        <Route path='/' element={<MainFeed theme={theme}></MainFeed>} />
-        <Route path='/VideoCall' element={<VideoMeet></VideoMeet>} />
-        <Route path='/Message' element={<Messages></Messages>} />
+        <Route path='/' element={[<SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>,<MainFeed></MainFeed>]}/>
+        <Route path='/VideoCall' element={[<SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>,<VideoMeet></VideoMeet>]}/> 
+        <Route path='/Message' element={[<SideMenu toggleButton={toggleButton} theme={theme}></SideMenu>,<Messages></Messages>]}/>
+        <Route path='*' element={<Error404></Error404>}/>
 
       </Routes>
 
-
-
-
-
-
-
-
-
-
-      {/* <SideMenu theme={theme} />
-      <Navbar className='side-bar' toggleButton={toggleButton} theme={theme} />
-      <Messages/>
-      {/* <UploadBar/> */}
-      {/* <MainFeed theme={theme} /> */}
     </>
   );
 }
