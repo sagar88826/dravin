@@ -5,7 +5,7 @@ function VideoMeet() {
         <>
             <div className='video-section'>
                 <div className="video-header">
-                <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-play-circle-fill"></i>
                 </div>
                 <div className="video-footer">
                     <div className='button-section'>

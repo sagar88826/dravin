@@ -54,15 +54,26 @@ export default function Messages() {
             <div className="chat-tab">
                 <div className="friend-header">
                     <div className="friend-header-img">
-                        <img src="" alt="" />
+                        <img src={avatar} alt="" />
                     </div>
-                    <div className="friend-header-name">Dillin Nair</div>
+                    <div className="name">
+                        <p className='friend-header-name'>Dillin Nair</p>
+                    </div>
                 </div>
-                <div className='type-section'>
-                    sagar
+                <div className="chat-window"></div>
+                <div className="chat-footer">
+                    <div className="msg-box">
+                        <input type="text" name="" id="" placeholder='Start Typing ...' />
+                    </div>
+                    <div className="upload-img">
+                        <i class="bi bi-paperclip"></i>
+                    </div>
+                    <div className="send-msg">
+                        <i class="bi bi-send-fill"></i>
+                    </div>
                 </div>
             </div>
-
         </div>
     )
+
 }
