@@ -64,10 +64,11 @@ export default function Messages() {
                 <div className="chat-footer">
                     <div className="msg-box">
                         <input type="text" name="" id="" placeholder='Start Typing ...' />
-                    </div>
-                    <div className="upload-img">
+                        <div className="upload-img">
                         <i class="bi bi-paperclip"></i>
                     </div>
+                    </div>
+                   
                     <div className="send-msg">
                         <i class="bi bi-send-fill"></i>
                     </div>

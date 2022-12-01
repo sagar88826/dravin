@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './MainFeed.css'
 import UploadBar from '../UserUpload/UploadBar'
 import avatar from '../Img/sideBar/avatar.jpg'
 
 function MainFeed(props) {
+
+    const [data, setdata] = useState([])
+    
+   const getData = async ()=>{
+    const response = await fetch('htttps://api.nytimes.com/svc/topstories/v2/world.json?api-key=MbAGWpZtPD4vOmTpoFwONWeEbTLVlWmP')
+    const data2 = await response.json();
+    setdata(data2);
+   }
+   console.log(data)
+
+        useEffect(()=>{
+            getData();
+            
+        },[])
+    
     return (
         <>
 
