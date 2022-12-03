@@ -45,7 +45,7 @@ function SideMenu(props) {
                     <Link to="/" ><li>
                         <div className="home-icon">
 
-                            <i class="bi bi-house"></i>
+                            <i className="bi bi-house"></i>
                             <h4 className={`menu-name ${props.theme}`}>
                                 Home
                             </h4>
@@ -59,7 +59,7 @@ function SideMenu(props) {
 
                         <div className="home-icon">
 
-                            <i class="bi bi-camera-video"></i>
+                            <i className="bi bi-camera-video"></i>
 
                             <h4 className={`menu-name ${props.theme}`}>Video Call</h4>
                         </div>
@@ -71,7 +71,7 @@ function SideMenu(props) {
                     <Link to="/Message" >
                         <div className="home-icon" >
 
-                            <i class="bi bi-chat-left"></i>
+                            <i className="bi bi-chat-left"></i>
                             <h4 className={`menu-name ${props.theme}`}>Message</h4>
                         </div>
                     </Link>
