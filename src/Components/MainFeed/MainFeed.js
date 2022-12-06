@@ -51,8 +51,8 @@ function MainFeed(props) {
                 </div>
 
                 {/* Side Box For News and Api Related Work  */}
-                <NewsApi theme={props.theme}/>
-               
+                <NewsApi theme={props.theme} />
+
             </div>
 
 

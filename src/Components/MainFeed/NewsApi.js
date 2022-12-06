@@ -1,75 +1,98 @@
 import React from 'react'
 import './MainFeed.css'
 import axios from 'axios'
-import { useEffect , useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function NewsApi(props) {
     const [apidata, setapiData] = useState([])
-    const [index , setIndex ] = useState(0)
+    const [index, setIndex] = useState(0)
 
     useEffect(() => {
         axios
-        .get("htttps://api.nytimes.com/svc/topstories/v2/world.json?api-key=MbAGWpZtPD4vOmTpoFwONWeEbTLVlWmP")
-        .then((res) => 
-            setapiData(res.data.results)
-           
-        );
-       
-    },[])
+            .get("https://api.nytimes.com/svc/topstories/v2/world.json?api-key=MbAGWpZtPD4vOmTpoFwONWeEbTLVlWmP")
+            .then((res) =>
+                setapiData(res.data.results)
+
+
+            );
+
+    }, [])
 
     useEffect(() => {
-        const lastIndex = apidata.length-1;
-        if(index < 0){
+        const lastIndex = apidata.length - 1;
+        if (index < 0) {
             setIndex(lastIndex);
         }
-        if(index > lastIndex){
+        if (index > lastIndex) {
             setIndex(0);
         }
-    },[index,apidata]);
+    }, [index, apidata]);
 
-    useEffect(()=>{
+    useEffect(() => {
         let slider = setInterval(() => {
-            setIndex = (index + 1);
-        },5000);
-        return() =>{
+            setIndex(index + 1);
+        }, 1000);
+        return () => {
             clearInterval(slider)
-        };  
-    });
+        }
+    }, [index]);
 
-    console.log(apidata)
 
     return (
 
-       
+
         <div className="tile-2">
             <div className="tile-2-child">
                 <div className={`side-box ${props.theme}`}>
                     <div className={`sb-header ${props.theme}`}>
                         <p className={`sb-head ${props.theme}`}>What's happening?</p>
                     </div>
-                    <div className="sb-content"></div>
+                    <div className="sb-content">
+
+
+                    </div>
                 </div>
                 <div className={`side-box ${props.theme}`}>
                     <div className={`sb-header ${props.theme}`}>
                         <p className={`sb-head ${props.theme}`}># News Headlines</p>
+                        <button onClick={() => { setIndex(index + 1) }}>right</button>
                     </div>
 
                     <div className="sb-content">
-                  {
-                  
-                  apidata.map((a , index) => {
-                    return(
-                        <>
-                        <div className="image-container">
-                           {/* <img src={a.media.url} alt="" /> */}
-                        </div>
-                        <div className="title">
-                             {a.title}
-                        </div>
+                        {
 
-                        </>
-                    )
-                  })}
+                            apidata.map((a, indexNews) => {
+                                const { multimedia, title, published_date, created_date, url } = a;
+                                let position = "nextSlide";
+                                if (indexNews === index) {
+                                    position = "activeSlide";
+                                }
+                                if (indexNews === index - 1 || (index === 0 && indexNews === index.length - 1)) {
+                                    position = "lastSlide"
+                                }
+
+                                return (
+
+                                    <section className={position} key={created_date}>
+                                        <div className="image-container">
+
+                                            <img src={multimedia[1].url} alt=" did Image just ran away ? " />
+                                        </div>
+                                        <div className="title">
+                                            <p className="title-head">
+                                                {title == "" ? "Get Realtime Updated News from all Around the World. ~ New York Times " : title}
+                                            </p>
+                                            <p className="time">
+                                                {published_date}
+                                            </p>
+                                            <a href={url} target='_blank' className="title-body">read more...</a>
+                                        </div>
+
+                                    </section>
+
+
+                                )
+                            })}
                     </div>
                 </div>
             </div>
