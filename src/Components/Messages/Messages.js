@@ -8,11 +8,11 @@ export default function Messages() {
             <div className="user-tab">
                 <div className="user-header">
                     <p>Messages</p>
-                    <i class="bi bi-gear-fill"></i>
+                    <i className="bi bi-gear-fill"></i>
                 </div>
                 <div className="search-bar">
                     <input className='search-bar-component' type="text" placeholder='Search' />
-                    <i class="bi bi-search"></i>
+                    <i className="bi bi-search"></i>
                 </div>
                 <div className="user-name">
                     <div className="dp">
@@ -64,12 +64,13 @@ export default function Messages() {
                 <div className="chat-footer">
                     <div className="msg-box">
                         <input type="text" name="" id="" placeholder='Start Typing ...' />
+                        <div className="upload-img">
+                        <i className="bi bi-paperclip"></i>
                     </div>
-                    <div className="upload-img">
-                        <i class="bi bi-paperclip"></i>
                     </div>
+                   
                     <div className="send-msg">
-                        <i class="bi bi-send-fill"></i>
+                        <i className="bi bi-send-fill"></i>
                     </div>
                 </div>
             </div>
