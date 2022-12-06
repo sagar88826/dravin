@@ -163,11 +163,11 @@
 
 .tile-2 .tile-2-child .side-box .sb-content{
     height: 100%;
-background-color: yellow;
+
 
 }
 
-/* .tile-2 .tile-2-child .side-box .sb-content .image-container{
+.tile-2 .tile-2-child .side-box .sb-content .image-container{
 height: 50%;
 background-color: wheat;
 border: 1px solid red;
@@ -179,4 +179,4 @@ background-color: white;
 .tile-2 .tile-2-child .side-box .sb-content .title .title-heading{
     height: 50%;
     background-color: khaki;
-} */
+}
