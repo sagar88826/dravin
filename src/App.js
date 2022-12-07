@@ -15,10 +15,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={[<SideMenu toggleButton={toggleButton} theme={theme}/>,<MainFeed theme={theme}/>]}/>
-        <Route path='/VideoCall' element={[<SideMenu toggleButton={toggleButton} theme={theme}/>,<VideoMeet/>]}/> 
-        <Route path='/Message' element={[<SideMenu toggleButton={toggleButton} theme={theme}/>,<Messages/>]}/>
-        <Route path='*' element={<Error404></Error404>}/>
+        <Route path='/' element={[<SideMenu toggleButton={toggleButton} theme={theme} />, <MainFeed theme={theme} />]} />
+        <Route path='/VideoCall' element={[<SideMenu toggleButton={toggleButton} theme={theme} />, <VideoMeet />]} />
+        <Route path='/Message' element={[<SideMenu toggleButton={toggleButton} theme={theme} />, <Messages />]} />
+        <Route path='*' element={<Error404></Error404>} />
 
       </Routes>
 

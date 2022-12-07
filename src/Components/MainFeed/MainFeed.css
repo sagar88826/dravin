@@ -161,20 +161,63 @@
     color: #e1e1e1;
 }
 
-.tile-2 .tile-2-child .side-box .sb-content{
+.tile-2 .tile-2-child .side-box .sb-content {
     height: 100%;
-background-color: red;
+
+
 }
 
-.tile-2 .tile-2-child .side-box .sb-content .image-container{
-height: 50%;
-background-color: wheat;
+.tile-2 .tile-2-child .side-box .sb-content .image-container {
+    height: 8.6rem;
+    background-color: wheat;
+    overflow: hidden;
+
+
 }
-.tile-2 .tile-2-child .side-box .sb-content .title{
-height: 50%;
-background-color: white;
+
+.tile-2 .tile-2-child .side-box .sb-content .image-container img {
+    max-width: 100%;
+    object-fit: contain;
 }
-.tile-2 .tile-2-child .side-box .sb-content .title .title-heading{
+
+.tile-2 .tile-2-child .side-box .sb-content .title {
     height: 50%;
-    background-color: khaki;
+}
+
+.tile-2 .tile-2-child .side-box .sb-content .title .title-head {
+    font-size: 1rem;
+    text-indent: 0.5rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    height: 25%;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.tile-2 .tile-2-child .side-box .sb-content .title .time {
+    display: inline-block;
+
+    font-size: 0.6rem;
+    color: rgb(157, 156, 156);
+    text-indent: 10px;
+
+}
+
+.tile-2 .tile-2-child .side-box .sb-content .title a {
+    font-size: 0.8rem;
+    margin-left: 5%;
+    font-weight: 500;
+    color: grey;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 16px;
+    padding: 2px 5px;
+
+}
+
+.tile-2 .tile-2-child .side-box .sb-content .title a:hover {
+    background-color: rgb(242, 242, 242);
+    transition: all 0.5s ease;
 }
