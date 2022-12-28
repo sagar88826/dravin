@@ -12,13 +12,29 @@ function NewsApi(props) {
             .get("https://api.nytimes.com/svc/topstories/v2/world.json?api-key=MbAGWpZtPD4vOmTpoFwONWeEbTLVlWmP")
             .then((res) =>
                 setapiData(res.data.results)
-                // console.log(res.data.results.title)
-
             );
-
     }, [])
-    // const linked='https://static01.nyt.com/images/2022/12/07/multimedia/07germ…-raids-1-f682/07germany-raids-1-f682-threeByTwoSmallAt2X.jpg'
-    console.log(apidata)
+
+    useEffect(() => {
+        const lastIndex = apidata.length - 1;
+        if (index < 0) {
+            setIndex(lastIndex);
+        }
+        if (index > lastIndex) {
+            setIndex(0);
+        }
+    }, [index, apidata]);
+
+    useEffect(() => {
+        let slider = setInterval(() => {
+            setIndex(index + 1);
+            console.log(slider)
+        }, 5000);
+        return () => {
+            clearInterval(slider)
+        }
+        
+    }, [index]);
     return (
 
 
@@ -36,29 +52,45 @@ function NewsApi(props) {
                 <div className={`side-box ${props.theme}`}>
                     <div className={`sb-header ${props.theme}`}>
                         <p className={`sb-head ${props.theme}`}># News Headlines</p>
+                        <button onClick={() => { setIndex(index - 1) }}>left</button>
+                        <button onClick={() => { setIndex(index + 1) }}>right</button>
                     </div>
 
                     <div className="sb-content">
                         {
 
-                            apidata.map((a) => {
-                                return (
+                            apidata.map((a, indexNews) => {
+            
+                                const { multimedia, title, published_date, created_date, url } = a;
+                                let position = "nextSlide";
+                                if (indexNews === index) {
+                                    position = "activeSlide";
+                                }
+                                if (indexNews === index - 1) {
+                                    position = "lastSlide"
+                                }
+            
 
-                            <>
-                            <div className="image-container">
-                                {a.multimedia===null?<h1>error image</h1>:<img src={a.multimedia[1].url} alt=" did Image just ran away ? " />}
-                            </div>
-                            <div className="title">
-                                <p className="title-head">
-                                    {a.title == "" ? "Get Realtime Updated News from all Around the World. ~ New York Times " : a.title}
-                                </p>
-                                <p className="time">
-                                    {a.published_date}
-                                </p>
-                                <a href={a.url} target='_blank' className="title-body">read more...</a>
-                            </div>
-                            </>
-                    
+                                return (
+                                   
+
+                                    <article className={position} key={created_date}>
+                                        <div className="image-container">
+
+                                            <img src={multimedia[1].url=== null? <h1>Image not availavle</h1> : multimedia[1].url} alt=" did Image just ran away ? " />
+                                        </div>
+                                        <div className="title">
+                                            <p className="title-head">
+                                                {title == "" ? "Get Realtime Updated News from all Around the World. ~ New York Times " : title}
+                                            </p>
+                                            <p className="time">
+                                            {published_date == "" ? "Date Not Availabe" : published_date}
+                                            </p>
+                                            <a href= {url == "" ? "404" : url} target='_blank' className="title-body">read more...</a>
+                                        </div>
+
+                                    </article>
+
 
                                 )
                             })}
