@@ -34,7 +34,8 @@ function App() {
             <Messages />,
           ]}
         />
-        <Route path="*" element={<Error404></Error404>} />
+        <Route path="/*" element={<Error404></Error404>} />
+        <Route path="/404" element={<Error404></Error404>} />
       </Routes>
     </>
   );

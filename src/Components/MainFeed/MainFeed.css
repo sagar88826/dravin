@@ -149,7 +149,8 @@
 .tile-container .tile-2 .tile-2-child .side-box .sb-header p {
   position: relative;
   top: 10px;
-  left: 18px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tile-container .tile-2 .tile-2-child .side-box .sb-header .sb-head.dark {
@@ -189,7 +190,6 @@
 
 .tile-2 .tile-2-child .side-box .sb-content .title .time {
   display: inline-block;
-
   font-size: 0.6rem;
   color: rgb(157, 156, 156);
   text-indent: 10px;
@@ -226,4 +226,26 @@ article.lastSlide {
 }
 article.nextSlide {
   transform: translateX(100%);
+}
+
+.bi.bi-chevron-double-right{
+border-radius: 16px;
+width: 20px;
+text-align: center;
+transition: all 0.5s ease;
+cursor: pointer;
+
+}
+.bi.bi-chevron-double-left{
+border-radius: 16px;
+width: 20px;
+text-align: center;
+transition: all 0.5s ease;
+cursor: pointer;
+}
+.bi.bi-chevron-double-left:hover{
+  background-color: rgba(128, 128, 128, 0.346);
+}
+.bi.bi-chevron-double-right:hover{
+  background-color: rgba(128, 128, 128, 0.346);
 }

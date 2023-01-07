@@ -37,29 +37,30 @@ function NewsApi(props) {
   return (
     <div className="tile-2">
       <div className="tile-2-child">
-        <div className={`side-box ${props.theme}`}>
+        {/* <div className={`side-box ${props.theme}`}>
           <div className={`sb-header ${props.theme}`}>
             <p className={`sb-head ${props.theme}`}>What's happening?</p>
           </div>
           <div className="sb-content"></div>
-        </div>
+        </div> */}
         <div className={`side-box ${props.theme}`}>
           <div className={`sb-header ${props.theme}`}>
-            <p className={`sb-head ${props.theme}`}># News Headlines</p>
-            <button
-              onClick={() => {
-                setIndex(index - 1);
-              }}
-            >
-              left
-            </button>
-            <button
-              onClick={() => {
-                setIndex(index + 1);
-              }}
-            >
-              right
-            </button>
+            <p className={`sb-head ${props.theme}`}>
+              {' '}
+              <i
+                class="bi bi-chevron-double-left"
+                onClick={() => {
+                  setIndex(index - 1);
+                }}
+              ></i>
+              # News Headlines
+              <i
+                class="bi bi-chevron-double-right"
+                onClick={() => {
+                  setIndex(index + 1);
+                }}
+              ></i>
+            </p>
           </div>
 
           <div className="sb-content">
@@ -79,13 +80,13 @@ function NewsApi(props) {
                   <div className="image-container">
                     <img
                       src={
-                        multimedia[1].url === null ? (
+                        multimedia === null ? (
                           <h1>Image not availavle</h1>
                         ) : (
                           multimedia[1].url
                         )
                       }
-                      alt=" did Image just ran away ? "
+                      alt=" Image not Available for this News"
                     />
                   </div>
                   <div className="title">
