@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from 'react';
 
 export function useDarkMode() {
   const [theme, settheme] = useState('light');
@@ -12,9 +12,8 @@ export function useDarkMode() {
   }
 
   const toggleButton = () => {
-
     theme === 'light' ? settheme('dark') : settheme('light');
-  }
+  };
 
-  return [theme, toggleButton]
+  return [theme, toggleButton];
 }
