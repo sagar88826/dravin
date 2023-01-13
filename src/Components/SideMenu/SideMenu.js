@@ -45,7 +45,7 @@ function SideMenu(props) {
         {/* Menu Bar  */}
 
         <div className="main-menu">
-          <Link to="/">
+          <Link to="/feed">
             <li>
               <div className="home-icon">
                 <i className="bi bi-house"></i>
