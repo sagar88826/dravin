@@ -6,6 +6,8 @@ import VideoMeet from './Components/VideoMeeting/VideoMeet';
 import Messages from './Components/Messages/Messages';
 import { Routes, Route } from 'react-router-dom';
 import Error404 from './Components/Error/Error404';
+import Login from './Components/Login/Login';
+import Register from './Components/Login/Register';
 
 function App() {
   const [theme, toggleButton] = useDarkMode();
@@ -13,8 +15,10 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route
-          path="/"
+          path="/feed"
           element={[
             <SideMenu toggleButton={toggleButton} theme={theme} />,
             <MainFeed theme={theme} />,
@@ -34,7 +38,7 @@ function App() {
             <Messages />,
           ]}
         />
-        <Route path="/*" element={<Error404></Error404>} />
+        <Route strict path="/*" element={<Error404></Error404>} />
         <Route path="/404" element={<Error404></Error404>} />
       </Routes>
     </>
